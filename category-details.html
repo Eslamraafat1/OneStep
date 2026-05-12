@@ -305,6 +305,198 @@
                     </div>
                 </div>
             </section>
+              <section class="filter-section-wrapper">
+                        <div class="container">
+                            <div class="filter-main-container wow fadeInUp" data-wow-delay=".2s">
+                                <div class="filter-bar">
+                                    <div class="filter-items-wrapper d-flex new-32">
+                                        <!-- Type Filter -->
+                                        <div class="filter-dropdown">
+                                            <button class="filter-btn">
+                                                <span class="btn-label">Housing Type</span>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <div class="filter-dropdown-menu">
+                                                <ul class="filter-option-list">
+                                                    <li>
+                                                        <label class="filter-option-item">
+                                                            <input type="checkbox" name="type" value="fixed">
+                                                            <span class="option-preview"><i
+                                                                    class="fa-solid fa-anchor"></i></span>
+                                                            <span class="option-label">Fixed</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter-option-item">
+                                                            <input type="checkbox" name="type" value="swivel">
+                                                            <span class="option-preview"><i
+                                                                    class="fa-solid fa-arrows-spin"></i></span>
+                                                            <span class="option-label">Swivel</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter-option-item">
+                                                            <input type="checkbox" name="type" value="swivel-lock">
+                                                            <span class="option-preview"><i
+                                                                    class="fa-solid fa-lock"></i></span>
+                                                            <span class="option-label">Swivel with lock</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Series Filter -->
+                                        <div class="filter-dropdown">
+                                            <button class="filter-btn">
+                                                <span class="btn-label">Product Series</span>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <div class="filter-dropdown-menu">
+                                                <ul class="filter-option-list">
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Kappa (Heavy Duty)</span></label>
+                                                    </li>
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Omikron (Industrial)</span></label>
+                                                    </li>
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Delta (Standard)</span></label>
+                                                    </li>
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Zeta (Design)</span></label></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Load Capacity Filter -->
+                                        <div class="filter-dropdown">
+                                            <button class="filter-btn" id="filterLoadBtn">
+                                                <span class="btn-label">Load Capacity</span>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <div class="filter-dropdown-menu range-menu">
+                                                <div class="range-slider-container">
+                                                    <div class="range-label">Range: <span id="loadRangeVal">1500 -
+                                                            7200</span> kg</div>
+                                                    <div class="custom-range-slider" id="loadSlider">
+                                                        <div class="slider-track"></div>
+                                                        <div class="slider-handle handle-min" data-type="min"></div>
+                                                        <div class="slider-handle handle-max" data-type="max"></div>
+                                                    </div>
+                                                    <div class="range-inputs">
+                                                        <input type="number" id="loadMin" value="1500" min="1500"
+                                                            max="7200">
+                                                        <span>–</span>
+                                                        <input type="number" id="loadMax" value="7200" min="1500"
+                                                            max="7200">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Diameter Filter -->
+                                        <div class="filter-dropdown">
+                                            <button class="filter-btn" id="filterDiaBtn">
+                                                <span class="btn-label">Diameter</span>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <div class="filter-dropdown-menu range-menu">
+                                                <div class="range-slider-container">
+                                                    <div class="range-label">Range: <span id="diaRangeVal">125 -
+                                                            400</span> mm</div>
+                                                    <div class="custom-range-slider" id="diaSlider">
+                                                        <div class="slider-track"></div>
+                                                        <div class="slider-handle handle-min" data-type="min"></div>
+                                                        <div class="slider-handle handle-max" data-type="max"></div>
+                                                    </div>
+                                                    <div class="range-inputs">
+                                                        <input type="number" id="diaMin" value="125" min="125"
+                                                            max="400">
+                                                        <span>–</span>
+                                                        <input type="number" id="diaMax" value="400" min="125"
+                                                            max="400">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Wheel Tread Filter -->
+                                        <div class="filter-dropdown">
+                                            <button class="filter-btn">
+                                                <span class="btn-label">Wheel Tread</span>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <div class="filter-dropdown-menu">
+                                                <ul class="filter-option-list">
+                                                    <li>
+                                                        <label class="filter-option-item">
+                                                            <input type="checkbox">
+                                                            <span class="option-preview"><i
+                                                                    class="fa-solid fa-circle-dot"></i></span>
+                                                            <span class="option-label">Polyamide / Nylon</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter-option-item">
+                                                            <input type="checkbox">
+                                                            <span class="option-preview"><i
+                                                                    class="fa-solid fa-circle-dot"
+                                                                    style="color:#ffae00"></i></span>
+                                                            <span class="option-label">Polyurethane</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter-option-item">
+                                                            <input type="checkbox">
+                                                            <span class="option-preview"><i
+                                                                    class="fa-solid fa-circle-dot"
+                                                                    style="color:#666"></i></span>
+                                                            <span class="option-label">Cast Iron</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Fitting Dimensions Filter -->
+                                        <div class="filter-dropdown">
+                                            <button class="filter-btn">
+                                                <span class="btn-label">Fitting Size</span>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <div class="filter-dropdown-menu">
+                                                <ul class="filter-option-list">
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Standard Plate
+                                                                (105x80)</span></label></li>
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Large Plate
+                                                                (137x105)</span></label></li>
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Heavy Duty (200x160)</span></label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter-actions">
+                                        <!-- Mobile Filter Toggle -->
+                                        <button class="mobile-filter-trigger" id="openMobileFilter">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <span>Filters</span>
+                                        </button>
+
+                                        <div class="filter-results-info">
+                                            <span class="results-count">124 Items</span>
+                                            <button class="clear-all-btn">Reset</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
             <section class="sub-section" id="subcategories">
                 <div class="container">
