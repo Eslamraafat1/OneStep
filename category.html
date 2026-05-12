@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Categories - OneStep</title>
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+ <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="O" class="letters-loading">
+                        O
+                    </span>
+                <span data-text-preloader="N" class="letters-loading">
+                        N
+                    </span>
+                <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                <span data-text-preloader="S" class="letters-loading">
+                        S
+                    </span>
+                <span data-text-preloader="T" class="letters-loading">
+                        T
+                    </span>
+                <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                <span data-text-preloader="P" class="letters-loading">
+                        P
+                    </span>
+                <!-- <span data-text-preloader="H" class="letters-loading">
+                        H
+                    </span> -->
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="back-top" class="back-to-top"><i class="fa-regular fa-arrow-up"></i></button>
+    <div class="mouseCursor cursor-outer"></div>
+    <div class="mouseCursor cursor-inner"></div>
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo"><a href="index.html"><img src="assets/img/logo/white-logo.svg"
+                                    alt="logo-img"></a></div>
+                        <div class="offcanvas__close"><button><i class="fas fa-times"></i></button></div>
+                    </div>
+                    <p class="text d-none d-xl-block">Nullam dignissim, ante scelerisque the is euismod fermentum odio
+                        sem semper the is erat, a feugiat leo urna eget eros.</p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon"><i class="fal fa-map-marker-alt"></i></div>
+                                <div class="offcanvas__contact-text"><a href="#">Main Street, Melbourne, Australia</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15"><i class="fal fa-envelope"></i></div>
+                                <div class="offcanvas__contact-text"><a
+                                        href="mailto:info@example.com">info@example.com</a></div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15"><i class="fal fa-clock"></i></div>
+                                <div class="offcanvas__contact-text"><a href="#">Mon-Fri, 09am-05pm</a></div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15"><i class="far fa-phone"></i></div>
+                                <div class="offcanvas__contact-text"><a href="tel:+11002345909">+11002345909</a></div>
+                            </li>
+                        </ul><a class="gt-theme-btn-main mt-4" href="contact.html"><span
+                                class="gt-theme-btn-arrow-left"><i class="fa-solid fa-arrow-up-right"></i></span><span
+                                class="gt-theme-btn">Get Started Now</span><span class="gt-theme-btn-arrow-right"><i
+                                    class="fa-solid fa-arrow-up-right"></i></span></a>
+                        <div class="social-icon d-flex align-items-center"><a href="#"><i
+                                    class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a
+                                href="#"><i class="fab fa-youtube"></i></a><a href="#"><i
+                                    class="fab fa-linkedin-in"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+    <header class="header-section-2">
+        <div id="header-sticky" class="header-2">
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <a href="index.html" class="logo">
+                                <img src="assets/img/logo/white-logo.svg" alt="img">
+                            </a>
+                        <div class="header-left">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li class="has-dropdown active menu-thumb">
+                                                <a href="index.html">
+                                                        Home 
+                                                   
+                                                    </a>
+                                               
+                                            </li>
+                                            <li class="has-dropdown active d-xl-none">
+                                                <a href="index.html" class="border-none">
+                                                        Home
+                                                    </a>
+                                               
+                                            </li>
+                                            <li>
+                                                <a href="about.html">About Us</a>
+                                            </li>
+                                              <li class="has-dropdown">
+                                                <a href="category.html">
+                                                    category
+                                                  
+                                                </a>
+                                                
+                                            </li>
+                                            <li>
+                                                <a href="our-services.html">
+                                                        Services
+                                                       
+                                                    </a>
+                                               
+                                            </li>
+                                          
+                                            <li>
+                                                <a href="news-grid.html">
+                                                        Blog
+                                                        
+                                                    </a>
+                                               
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">Contact Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #f15a24;"></i> Cart <span class="cart-count badge" style="background:#f15a24; border-radius:50%; margin-left:5px; font-size:12px;">2</span></a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <a href="#" class="main-header__search search-toggler">
+                                    <i class="fa-regular fa-magnifying-glass"></i>
+                                </a>
+
+                            <div class="header__hamburger my-auto">
+                                <div class="sidebar__toggle">
+                                    <div class="gt-theme-btn-main">
+                                        <span class="gt-theme-btn-arrow-left"> <i class="fa-solid fa-ellipsis-vertical"></i> </span>
+                                        <span class="gt-theme-btn">Menu</span>
+                                        <span class="gt-theme-btn-arrow-right"> <i class="fa-solid fa-ellipsis-vertical"></i> </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <div class="search-popup__content style-2">
+            <form role="search" method="get" class="search-popup__form" action="#"><input type="text" id="search"
+                    name="search" placeholder="Search Here..."><button type="submit" aria-label="search submit"
+                    class="search-btn"><span><i class="fa-regular fa-magnifying-glass"></i></span></button></form>
+        </div>
+    </div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <section class="cat-hero">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 cat-hero-content wow fadeInLeft" data-wow-delay=".3s">
+                            <span class="cat-hero-badge text-white"><i class="fa-solid fa-layer-group"></i> Our Categories</span>
+                            <h1 class="cat-hero-title">Explore Our <span>Premium</span> Product Categories</h1>
+                            <p class="cat-hero-desc">Discover a wide range of world-class products organized into
+                                intuitive categories. From cutting-edge technology to innovative solutions, find exactly
+                                what you need.</p>
+                            <div class="d-flex gap-3 flex-wrap mt-4">
+                                <a href="#categories" class="gt-theme-btn-main"><span class="gt-theme-btn-arrow-left"><i
+                                            class="fa-solid fa-arrow-up-right"></i></span><span
+                                        class="gt-theme-btn">Browse Categories</span><span
+                                        class="gt-theme-btn-arrow-right"><i
+                                            class="fa-solid fa-arrow-up-right"></i></span></a>
+                                <a href="our-services.html" class="gt-theme-btn-main"
+                                    style="background:transparent;border:1px solid rgba(241,90,36,.4)"><span
+                                        class="gt-theme-btn-arrow-left"><i
+                                            class="fa-solid fa-arrow-up-right"></i></span><span class="gt-theme-btn">Our
+                                        Services</span><span class="gt-theme-btn-arrow-right"><i
+                                            class="fa-solid fa-arrow-up-right"></i></span></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s">
+                            <div class="cat-hero-img">
+                                <img src="assets/img/home-2/hero/hero-image-1.jpg" alt="Categories Hero">
+                                <div
+                                    style="position:absolute;bottom:30px;left:30px;background:rgba(241,90,36,.9);backdrop-filter:blur(10px);border-radius:16px;padding:20px 28px;z-index:3">
+                                    <div style="display:flex;align-items:center;gap:12px"><i
+                                            class="fa-solid fa-boxes-stacked" style="color:#fff;font-size:1.8rem"></i>
+                                        <div>
+                                            <div style="color:#fff;font-size:1.6rem;font-weight:800">50+</div>
+                                            <div style="color:rgba(255,255,255,.8);font-size:.85rem">Product Categories
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="stats-section bg-black">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+                            <div class="stat-item">
+                                <div class="stat-number"><span class="count">500</span>+</div>
+                                <div class="stat-label">Products Available</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="stat-item">
+                                <div class="stat-number"><span class="count">50</span>+</div>
+                                <div class="stat-label">Categories</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                            <div class="stat-item">
+                                <div class="stat-number"><span class="count">1200</span>+</div>
+                                <div class="stat-label">Happy Clients</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="stat-item">
+                                <div class="stat-number"><span class="count">10</span>+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Mobile Filter Off-canvas -->
+
+            <div class="filter-overlay" id="filterOverlay"></div>
+
+            <section class="section-cat section-bg " style="background-color: #000 !important;" id="categories">
+                <div class="container">
+                    <div class="section-title-wrap text-center mb-5">
+                        <h6 class="sub-title wow fadeInUp">// Browse Categories</h6>
+                        <h2 class="text-anim">Our Main Product Categories</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".3s">Explore our carefully curated categories, each
+                            containing a wide selection of premium products tailored to your needs.</p>
+                    </div>
+                    <section class="filter-section-wrapper">
+                        <div class="container">
+                            <div class="filter-main-container wow fadeInUp" data-wow-delay=".2s">
+                                <div class="filter-bar">
+                                    <div class="filter-items-wrapper d-flex new-32">
+                                        <!-- Type Filter -->
+                                        <div class="filter-dropdown">
+                                            <button class="filter-btn">
+                                                <span class="btn-label">Housing Type</span>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <div class="filter-dropdown-menu">
+                                                <ul class="filter-option-list">
+                                                    <li>
+                                                        <label class="filter-option-item">
+                                                            <input type="checkbox" name="type" value="fixed">
+                                                            <span class="option-preview"><i
+                                                                    class="fa-solid fa-anchor"></i></span>
+                                                            <span class="option-label">Fixed</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter-option-item">
+                                                            <input type="checkbox" name="type" value="swivel">
+                                                            <span class="option-preview"><i
+                                                                    class="fa-solid fa-arrows-spin"></i></span>
+                                                            <span class="option-label">Swivel</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter-option-item">
+                                                            <input type="checkbox" name="type" value="swivel-lock">
+                                                            <span class="option-preview"><i
+                                                                    class="fa-solid fa-lock"></i></span>
+                                                            <span class="option-label">Swivel with lock</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Series Filter -->
+                                        <div class="filter-dropdown">
+                                            <button class="filter-btn">
+                                                <span class="btn-label">Product Series</span>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <div class="filter-dropdown-menu">
+                                                <ul class="filter-option-list">
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Kappa (Heavy Duty)</span></label>
+                                                    </li>
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Omikron (Industrial)</span></label>
+                                                    </li>
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Delta (Standard)</span></label>
+                                                    </li>
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Zeta (Design)</span></label></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Load Capacity Filter -->
+                                        <div class="filter-dropdown">
+                                            <button class="filter-btn" id="filterLoadBtn">
+                                                <span class="btn-label">Load Capacity</span>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <div class="filter-dropdown-menu range-menu">
+                                                <div class="range-slider-container">
+                                                    <div class="range-label">Range: <span id="loadRangeVal">1500 -
+                                                            7200</span> kg</div>
+                                                    <div class="custom-range-slider" id="loadSlider">
+                                                        <div class="slider-track"></div>
+                                                        <div class="slider-handle handle-min" data-type="min"></div>
+                                                        <div class="slider-handle handle-max" data-type="max"></div>
+                                                    </div>
+                                                    <div class="range-inputs">
+                                                        <input type="number" id="loadMin" value="1500" min="1500"
+                                                            max="7200">
+                                                        <span>–</span>
+                                                        <input type="number" id="loadMax" value="7200" min="1500"
+                                                            max="7200">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Diameter Filter -->
+                                        <div class="filter-dropdown">
+                                            <button class="filter-btn" id="filterDiaBtn">
+                                                <span class="btn-label">Diameter</span>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <div class="filter-dropdown-menu range-menu">
+                                                <div class="range-slider-container">
+                                                    <div class="range-label">Range: <span id="diaRangeVal">125 -
+                                                            400</span> mm</div>
+                                                    <div class="custom-range-slider" id="diaSlider">
+                                                        <div class="slider-track"></div>
+                                                        <div class="slider-handle handle-min" data-type="min"></div>
+                                                        <div class="slider-handle handle-max" data-type="max"></div>
+                                                    </div>
+                                                    <div class="range-inputs">
+                                                        <input type="number" id="diaMin" value="125" min="125"
+                                                            max="400">
+                                                        <span>–</span>
+                                                        <input type="number" id="diaMax" value="400" min="125"
+                                                            max="400">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Wheel Tread Filter -->
+                                        <div class="filter-dropdown">
+                                            <button class="filter-btn">
+                                                <span class="btn-label">Wheel Tread</span>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <div class="filter-dropdown-menu">
+                                                <ul class="filter-option-list">
+                                                    <li>
+                                                        <label class="filter-option-item">
+                                                            <input type="checkbox">
+                                                            <span class="option-preview"><i
+                                                                    class="fa-solid fa-circle-dot"></i></span>
+                                                            <span class="option-label">Polyamide / Nylon</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter-option-item">
+                                                            <input type="checkbox">
+                                                            <span class="option-preview"><i
+                                                                    class="fa-solid fa-circle-dot"
+                                                                    style="color:#ffae00"></i></span>
+                                                            <span class="option-label">Polyurethane</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filter-option-item">
+                                                            <input type="checkbox">
+                                                            <span class="option-preview"><i
+                                                                    class="fa-solid fa-circle-dot"
+                                                                    style="color:#666"></i></span>
+                                                            <span class="option-label">Cast Iron</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- Fitting Dimensions Filter -->
+                                        <div class="filter-dropdown">
+                                            <button class="filter-btn">
+                                                <span class="btn-label">Fitting Size</span>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </button>
+                                            <div class="filter-dropdown-menu">
+                                                <ul class="filter-option-list">
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Standard Plate
+                                                                (105x80)</span></label></li>
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Large Plate
+                                                                (137x105)</span></label></li>
+                                                    <li><label class="filter-option-item"><input type="checkbox"> <span
+                                                                class="option-label">Heavy Duty (200x160)</span></label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter-actions">
+                                        <!-- Mobile Filter Toggle -->
+                                        <button class="mobile-filter-trigger" id="openMobileFilter">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <span>Filters</span>
+                                        </button>
+
+                                        <div class="filter-results-info">
+                                            <span class="results-count">124 Items</span>
+                                            <button class="clear-all-btn">Reset</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="filter-offcanvas" id="mobileFilterOffcanvas">
+                        <div class="filter-offcanvas-header">
+                            <h3>Filter Products</h3>
+                            <button class="close-offcanvas"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="filter-offcanvas-body">
+                            <div class="filter-accordion">
+                                <div class="accordion-item active">
+                                    <button class="accordion-header">Housing Type <i
+                                            class="fa-solid fa-minus"></i></button>
+                                    <div class="accordion-content">
+                                        <div class="mobile-checkbox-grid">
+                                            <label class="m-cb"><input type="checkbox"> Fixed</label>
+                                            <label class="m-cb"><input type="checkbox"> Swivel</label>
+                                            <label class="m-cb"><input type="checkbox"> Swivel with lock</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">Product Series <i
+                                            class="fa-solid fa-plus"></i></button>
+                                    <div class="accordion-content">
+                                        <div class="mobile-checkbox-grid">
+                                            <label class="m-cb"><input type="checkbox"> Kappa</label>
+                                            <label class="m-cb"><input type="checkbox"> Omikron</label>
+                                            <label class="m-cb"><input type="checkbox"> Delta</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">Load Capacity <i
+                                            class="fa-solid fa-plus"></i></button>
+                                    <div class="accordion-content">
+                                        <div class="range-mobile">
+                                            <div class="range-inputs">
+                                                <input type="number" placeholder="Min (kg)">
+                                                <input type="number" placeholder="Max (kg)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">Diameter <i class="fa-solid fa-plus"></i></button>
+                                    <div class="accordion-content">
+                                        <div class="range-mobile">
+                                            <div class="range-inputs">
+                                                <input type="number" placeholder="Min (mm)">
+                                                <input type="number" placeholder="Max (mm)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-offcanvas-footer">
+                            <button class="apply-filters-btn">Apply 124 Results</button>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+                            <a href="category-details.html" class="cat-card">
+                                <div class="cat-card-img"><img src="assets/img/home-2/service/servive-01.jpg"
+                                        alt="Tech Solutions"><span class="cat-card-count">12 Products</span></div>
+                                <div class="cat-card-body">
+                                    <div class="cat-card-icon"><i class="fa-solid fa-microchip"></i></div>
+                                    <h3 class="cat-card-title">Technology Solutions</h3>
+                                    <p class="cat-card-desc">Cutting-edge technology products designed to transform your
+                                        business operations and drive innovation.</p>
+                                    <div class="cat-card-link">Explore Category <i
+                                            class="fa-solid fa-arrow-up-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                            <a href="category-details.html" class="cat-card">
+                                <div class="cat-card-img"><img src="assets/img/home-2/service/servive-02.jpg"
+                                        alt="Digital Services"><span class="cat-card-count">18 Products</span></div>
+                                <div class="cat-card-body">
+                                    <div class="cat-card-icon"><i class="fa-solid fa-globe"></i></div>
+                                    <h3 class="cat-card-title">Digital Services</h3>
+                                    <p class="cat-card-desc">Comprehensive digital solutions including web development,
+                                        mobile apps, and cloud infrastructure.</p>
+                                    <div class="cat-card-link">Explore Category <i
+                                            class="fa-solid fa-arrow-up-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                            <a href="category-details.html" class="cat-card">
+                                <div class="cat-card-img"><img src="assets/img/home-2/service/servive-03.jpg"
+                                        alt="AI Products"><span class="cat-card-count">9 Products</span></div>
+                                <div class="cat-card-body">
+                                    <div class="cat-card-icon"><i class="fa-solid fa-brain"></i></div>
+                                    <h3 class="cat-card-title">AI & Machine Learning</h3>
+                                    <p class="cat-card-desc">Next-generation artificial intelligence and machine
+                                        learning tools for smarter business decisions.</p>
+                                    <div class="cat-card-link">Explore Category <i
+                                            class="fa-solid fa-arrow-up-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                            <a href="category-details.html" class="cat-card">
+                                <div class="cat-card-img"><img src="assets/img/home-2/service/servive-04.jpg"
+                                        alt="Security"><span class="cat-card-count">7 Products</span></div>
+                                <div class="cat-card-body">
+                                    <div class="cat-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                    <h3 class="cat-card-title">Security Systems</h3>
+                                    <p class="cat-card-desc">Advanced cybersecurity and physical security solutions to
+                                        protect your assets and data.</p>
+                                    <div class="cat-card-link">Explore Category <i
+                                            class="fa-solid fa-arrow-up-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                            <a href="category-details.html" class="cat-card">
+                                <div class="cat-card-img"><img src="assets/img/home-1/project/project-1.jpg"
+                                        alt="Analytics"><span class="cat-card-count">14 Products</span></div>
+                                <div class="cat-card-body">
+                                    <div class="cat-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                    <h3 class="cat-card-title">Data Analytics</h3>
+                                    <p class="cat-card-desc">Powerful analytics platforms and business intelligence
+                                        tools to unlock insights from your data.</p>
+                                    <div class="cat-card-link">Explore Category <i
+                                            class="fa-solid fa-arrow-up-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                            <a href="category-details.html" class="cat-card">
+                                <div class="cat-card-img"><img src="assets/img/home-1/project/project-1.jpg"
+                                        alt="Cloud"><span class="cat-card-count">11 Products</span></div>
+                                <div class="cat-card-body">
+                                    <div class="cat-card-icon"><i class="fa-solid fa-cloud"></i></div>
+                                    <h3 class="cat-card-title">Cloud Infrastructure</h3>
+                                    <p class="cat-card-desc">Scalable cloud solutions that grow with your business,
+                                        ensuring reliability and peak performance.</p>
+                                    <div class="cat-card-link">Explore Category <i
+                                            class="fa-solid fa-arrow-up-right"></i></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer-section fix section-bg-1">
+                <div class="right-shape">   <!-- <img src="assets/img/home-2/hero/hero-light.png" alt="img"> --></div>
+                <div class="container">
+                    <div class="cta-newsletter-wrapper">
+                        <h2 class="text-anim">Let's Talk to your Projects</h2><a class="gt-theme-btn-main wow fadeInUp"
+                            data-wow-delay=".7s" href="contact.html"><span class="gt-theme-btn-arrow-left"><i
+                                    class="fa-solid fa-arrow-up-right"></i></span><span class="gt-theme-btn">Get Started
+                                Now</span><span class="gt-theme-btn-arrow-right"><i
+                                    class="fa-solid fa-arrow-up-right"></i></span></a>
+                    </div>
+                </div>
+                <div class="footer-area">
+                    <div class="container">
+                        <div class="footer-widget-wrapper">
+                            <div class="row justify-content-between">
+                                <div class="col-xl-4 col-lg-5 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                    <div class="footer-widget-items">
+                                        <div class="widget-head"><a href="index.html" class="footer-logo"><img
+                                                    src="assets/img/logo/white-logo.svg" alt="img"></a></div>
+                                        <div class="footer-content">
+                                            <p>The purpose of a FAQ is generally provide information on Perfect for
+                                                Small Teams, Startups, and Growing.</p>
+                                            <div class="social-icon d-flex align-items-center"><a href="#"><i
+                                                        class="fab fa-facebook-f"></i></a><a href="#"><i
+                                                        class="fab fa-twitter"></i></a><a href="#"><i
+                                                        class="fab fa-youtube"></i></a><a href="#"><i
+                                                        class="fab fa-linkedin-in"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                    <div class="footer-widget-items">
+                                        <div class="widget-head">
+                                            <h3>Solutions</h3>
+                                        </div>
+                                        <ul class="gt-list-area">
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="our-services.html">Services</a></li>
+                                            <li><a href="category.html">Categories</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 ps-lg-0 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                    <div class="footer-widget-items">
+                                        <div class="widget-head">
+                                            <h3>Categories</h3>
+                                        </div>
+                                        <ul class="gt-list-area">
+                                            <li><a href="category-details.html">Technology Solutions</a></li>
+                                            <li><a href="category-details.html">Digital Services</a></li>
+                                            <li><a href="category-details.html">AI &amp; Machine Learning</a></li>
+                                            <li><a href="category-details.html">Security Systems</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                    <div class="footer-widget-items">
+                                        <div class="widget-head">
+                                            <h3>Get in touch</h3>
+                                        </div>
+                                        <ul class="contact-list">
+                                            <li>United States &mdash;<br>350 Fifth Avenue, New York, NY 10118</li>
+                                            <li><a href="tel:+11002345909">+11002345909</a></li>
+                                            <li>Mon-Fri 9:00am - 5:00pm</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="footer-bottom-wrapper">
+                                <p class="wow fadeInUp" data-wow-delay=".3s">© 2026 <b>OneStep.</b> All rights reserved.
+                                </p>
+                                <ul class="footer-list wow fadeInUp" data-wow-delay=".7s">
+                                    <li><a href="contact.html">Privacy policy</a></li>
+                                    <li>।</li>
+                                    <li><a href="contact.html">Terms &amp; conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/TextPlugin.js"></script>
+    <script src="assets/js/chroma.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/parallaxie.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/filter.js"></script>
+</body>
+
+</html>

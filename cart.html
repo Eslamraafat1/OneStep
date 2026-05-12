@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Shopping Cart - OneStep</title>
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner"></div>
+            <div class="txt-loading">
+                <span data-text-preloader="O" class="letters-loading">O</span>
+                <span data-text-preloader="N" class="letters-loading">N</span>
+                <span data-text-preloader="E" class="letters-loading">E</span>
+                <span data-text-preloader="S" class="letters-loading">S</span>
+                <span data-text-preloader="T" class="letters-loading">T</span>
+                <span data-text-preloader="E" class="letters-loading">E</span>
+                <span data-text-preloader="P" class="letters-loading">P</span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left"><div class="bg"></div></div>
+                <div class="col-3 loader-section section-left"><div class="bg"></div></div>
+                <div class="col-3 loader-section section-right"><div class="bg"></div></div>
+                <div class="col-3 loader-section section-right"><div class="bg"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <button id="back-top" class="back-to-top"><i class="fa-regular fa-arrow-up"></i></button>
+    <div class="mouseCursor cursor-outer"></div>
+    <div class="mouseCursor cursor-inner"></div>
+
+    <!-- Offcanvas -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo"><a href="index.html"><img src="assets/img/logo/white-logo.svg" alt="logo-img"></a></div>
+                        <div class="offcanvas__close"><button><i class="fas fa-times"></i></button></div>
+                    </div>
+                    <p class="text d-none d-xl-block">Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat.</p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon"><i class="fal fa-map-marker-alt"></i></div>
+                                <div class="offcanvas__contact-text"><a href="#">Main Street, Melbourne, Australia</a></div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15"><i class="far fa-phone"></i></div>
+                                <div class="offcanvas__contact-text"><a href="tel:+11002345909">+11002345909</a></div>
+                            </li>
+                        </ul>
+                        <a class="gt-theme-btn-main mt-4" href="contact.html">
+                            <span class="gt-theme-btn-arrow-left"><i class="fa-solid fa-arrow-up-right"></i></span>
+                            <span class="gt-theme-btn">Get Started</span>
+                            <span class="gt-theme-btn-arrow-right"><i class="fa-solid fa-arrow-up-right"></i></span>
+                        </a>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header -->
+    <header class="header-section-2">
+        <div id="header-sticky" class="header-2">
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <a href="index.html" class="logo">
+                            <img src="assets/img/logo/white-logo.svg" alt="img">
+                        </a>
+                        <div class="header-left">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li class="has-dropdown menu-thumb"><a href="index.html">Home</a></li>
+                                            <li class="has-dropdown d-xl-none"><a href="index.html" class="border-none">Home</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li class="has-dropdown"><a href="category.html">category</a></li>
+                                            <li><a href="our-services.html">Services</a></li>
+                                            <li><a href="news-grid.html">Blog</a></li>
+                                            <li><a href="contact.html">Contact Us</a></li>
+                                            <!-- Cart Link added to menu for convenience -->
+                                            <li class="active"><a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #f15a24;"></i> Cart <span class="cart-count badge" style="background:#f15a24; border-radius:50%; margin-left:5px; font-size:12px;">2</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <a href="#" class="main-header__search search-toggler">
+                                <i class="fa-regular fa-magnifying-glass"></i>
+                            </a>
+                            <div class="header__hamburger my-auto">
+                                <div class="sidebar__toggle">
+                                    <div class="gt-theme-btn-main">
+                                        <span class="gt-theme-btn-arrow-left"> <i class="fa-solid fa-ellipsis-vertical"></i> </span>
+                                        <span class="gt-theme-btn">Menu</span>
+                                        <span class="gt-theme-btn-arrow-right"> <i class="fa-solid fa-ellipsis-vertical"></i> </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Popup -->
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <div class="search-popup__content style-2">
+            <form role="search" method="get" class="search-popup__form" action="#">
+                <input type="text" id="search" name="search" placeholder="Search Here...">
+                <button type="submit" aria-label="search submit" class="search-btn"><span><i class="fa-regular fa-magnifying-glass"></i></span></button>
+            </form>
+        </div>
+    </div>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Cart Hero -->
+            <section class="cart-hero">
+                <div class="container">
+                    <div class="cart-hero-content wow fadeInUp">
+                        <h1 class="pd-title" style="margin-bottom: 0;">Your Shopping Cart</h1>
+                        <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
+                            <a href="index.html" style="color:rgba(255,255,255,.5);font-size:.85rem">Home</a>
+                            <i class="fa-solid fa-chevron-right" style="color:#f15a24;font-size:.7rem"></i>
+                            <span style="color:#f15a24;font-size:.85rem">Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cart Body -->
+            <section class="cart-section">
+                <div class="container">
+                    <div class="row g-5">
+                        
+                        <!-- Cart Items -->
+                        <div class="col-lg-8 wow fadeInLeft" data-wow-delay=".2s">
+                            <div class="d-flex justify-content-between align-items-center mb-4 pb-3" style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <h2 style="color: #fff; font-size: 1.5rem; font-weight: 700; margin: 0;">Cart Items (<span id="cart-item-count">2</span>)</h2>
+                                <a href="category.html" style="color: #f15a24; text-decoration: underline; font-weight: 600; font-size: 0.95rem;">Continue Shopping</a>
+                            </div>
+
+                            <!-- Item 1 -->
+                            <div class="cart-item" data-price="2500">
+                                <div class="cart-item-img">
+                                    <img src="https://www.tente.com/media/d6/7a/fa/1773827537/product_main_261.jpg?ts=1773827537" alt="Product">
+                                </div>
+                                <div class="cart-item-info">
+                                    <div class="cart-item-cat">Enterprise Software</div>
+                                    <h4 class="cart-item-title">Enterprise ERP Suite Pro</h4>
+                                    <div class="cart-item-price">$2,500.00</div>
+                                </div>
+                                <div class="cart-qty-ctrl">
+                                    <button class="cart-qty-btn minus" type="button"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="text" class="cart-qty-input" value="1" readonly>
+                                    <button class="cart-qty-btn plus" type="button"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                                <div class="cart-item-total" style="color: #fff; font-weight: 700; width: 100px; text-align: right; font-size: 1.1rem;">$2,500.00</div>
+                                <button class="cart-item-remove" title="Remove Item" type="button"><i class="fa-solid fa-trash-can"></i></button>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="cart-item" data-price="850">
+                                <div class="cart-item-img">
+                                    <img src="assets/img/home-2/service/servive-04.jpg" alt="Product" onerror="this.src='https://www.tente.com/media/d6/7a/fa/1773827537/product_main_261.jpg?ts=1773827537'">
+                                </div>
+                                <div class="cart-item-info">
+                                    <div class="cart-item-cat">Cloud Solutions</div>
+                                    <h4 class="cart-item-title">CloudOps Manager 1TB</h4>
+                                    <div class="cart-item-price">$850.00</div>
+                                </div>
+                                <div class="cart-qty-ctrl">
+                                    <button class="cart-qty-btn minus" type="button"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="text" class="cart-qty-input" value="1" readonly>
+                                    <button class="cart-qty-btn plus" type="button"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                                <div class="cart-item-total" style="color: #fff; font-weight: 700; width: 100px; text-align: right; font-size: 1.1rem;">$850.00</div>
+                                <button class="cart-item-remove" title="Remove Item" type="button"><i class="fa-solid fa-trash-can"></i></button>
+                            </div>
+
+                            <!-- Empty Cart Message (Hidden by default) -->
+                            <div id="empty-cart-msg" style="display: none; text-align: center; padding: 60px 20px; background: rgba(255,255,255,0.02); border-radius: 20px; border: 1px dashed rgba(255,255,255,0.1);">
+                                <i class="fa-solid fa-cart-arrow-down" style="font-size: 4rem; color: rgba(241,90,36,0.5); margin-bottom: 20px;"></i>
+                                <h3 style="color: #fff; margin-bottom: 15px;">Your cart is empty</h3>
+                                <p style="color: rgba(255,255,255,0.6); margin-bottom: 25px;">Looks like you haven't added anything to your cart yet.</p>
+                                <a href="category.html" class="gt-theme-btn-main">
+                                    <span class="gt-theme-btn-arrow-left"><i class="fa-solid fa-arrow-up-right"></i></span>
+                                    <span class="gt-theme-btn">Start Shopping</span>
+                                    <span class="gt-theme-btn-arrow-right"><i class="fa-solid fa-arrow-up-right"></i></span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <!-- Order Summary -->
+                        <div class="col-lg-4 wow fadeInRight" data-wow-delay=".3s">
+                            <div class="cart-summary">
+                                <h3>Order Summary</h3>
+                                <div class="summary-row">
+                                    <span>Subtotal</span>
+                                    <span id="cart-subtotal">$3,350.00</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Tax (10%)</span>
+                                    <span id="cart-tax">$335.00</span>
+                                </div>
+                                <div class="summary-row total">
+                                    <span>Total Price</span>
+                                    <span id="cart-total">$3,685.00</span>
+                                </div>
+                                <button class="checkout-btn" id="checkoutBtn">
+                                    Proceed to Checkout <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; text-align: center; margin-top: 15px; margin-bottom: 0;">
+                                    <i class="fa-solid fa-shield-halved" style="color: #f15a24;"></i> Secure 256-bit SSL Checkout
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer-section fix section-bg-1">
+                <div class="right-shape">   <!-- <img src="assets/img/home-2/hero/hero-light.png" alt="img"> --></div>
+                <div class="container">
+                    <div class="cta-newsletter-wrapper">
+                        <h2 class="text-anim">Need Help Ordering?</h2>
+                        <a class="gt-theme-btn-main wow fadeInUp" href="https://wa.me/11002345909" target="_blank">
+                            <span class="gt-theme-btn-arrow-left"><i class="fa-solid fa-arrow-up-right"></i></span>
+                            <span class="gt-theme-btn">Contact on WhatsApp</span>
+                            <span class="gt-theme-btn-arrow-right"><i class="fa-solid fa-arrow-up-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-area">
+                    <div class="container">
+                        <div class="footer-widget-wrapper">
+                            <div class="row justify-content-between">
+                                <div class="col-xl-4 col-lg-5 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                    <div class="footer-widget-items">
+                                        <div class="widget-head"><a href="index.html" class="footer-logo"><img src="assets/img/logo/white-logo.svg" alt="img"></a></div>
+                                        <div class="footer-content">
+                                            <p>Providing cutting-edge technology solutions to businesses worldwide.</p>
+                                            <div class="social-icon d-flex align-items-center">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                    <div class="footer-widget-items">
+                                        <div class="widget-head"><h3>Quick Links</h3></div>
+                                        <ul class="gt-list-area">
+                                            <li><a href="category.html">Categories</a></li>
+                                            <li><a href="our-services.html">Services</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 ps-lg-0 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                    <div class="footer-widget-items">
+                                        <div class="widget-head"><h3>Products</h3></div>
+                                        <ul class="gt-list-area">
+                                            <li><a href="product-details.html">Enterprise Software</a></li>
+                                            <li><a href="product-details.html">Network Solutions</a></li>
+                                            <li><a href="product-details.html">IoT Devices</a></li>
+                                            <li><a href="product-details.html">Cloud Platforms</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                    <div class="footer-widget-items">
+                                        <div class="widget-head"><h3>Get in touch</h3></div>
+                                        <ul class="contact-list">
+                                            <li>350 Fifth Avenue, New York, NY 10118</li>
+                                            <li><a href="tel:+11002345909">+11002345909</a></li>
+                                            <li>Mon-Fri 9:00am - 5:00pm</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="footer-bottom-wrapper">
+                                <p>© 2026 <b>OneStep.</b> All rights reserved.</p>
+                                <ul class="footer-list">
+                                    <li><a href="contact.html">Privacy policy</a></li>
+                                    <li>।</li>
+                                    <li><a href="contact.html">Terms &amp; conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/TextPlugin.js"></script>
+    <script src="assets/js/chroma.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/parallaxie.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Cart Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const formatCurrency = (num) => {
+                return '$' + num.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+            };
+
+            const updateCartTotals = () => {
+                let subtotal = 0;
+                let itemCount = 0;
+                const items = document.querySelectorAll('.cart-item');
+                
+                items.forEach(item => {
+                    if(item.style.display !== 'none') {
+                        const price = parseFloat(item.getAttribute('data-price'));
+                        const qty = parseInt(item.querySelector('.cart-qty-input').value);
+                        const itemTotal = price * qty;
+                        item.querySelector('.cart-item-total').textContent = formatCurrency(itemTotal);
+                        subtotal += itemTotal;
+                        itemCount++;
+                    }
+                });
+                
+                document.getElementById('cart-item-count').textContent = itemCount;
+                document.querySelector('.cart-count').textContent = itemCount;
+
+                if (itemCount === 0) {
+                    document.getElementById('empty-cart-msg').style.display = 'block';
+                    document.getElementById('checkoutBtn').disabled = true;
+                    document.getElementById('checkoutBtn').style.opacity = '0.5';
+                    document.getElementById('checkoutBtn').style.cursor = 'not-allowed';
+                }
+                
+                const tax = subtotal * 0.10;
+                const total = subtotal + tax;
+                
+                document.getElementById('cart-subtotal').textContent = formatCurrency(subtotal);
+                document.getElementById('cart-tax').textContent = formatCurrency(tax);
+                document.getElementById('cart-total').textContent = formatCurrency(total);
+            };
+
+            document.querySelectorAll('.cart-item').forEach(item => {
+                const minusBtn = item.querySelector('.minus');
+                const plusBtn = item.querySelector('.plus');
+                const qtyInput = item.querySelector('.cart-qty-input');
+                const removeBtn = item.querySelector('.cart-item-remove');
+
+                minusBtn.addEventListener('click', () => {
+                    let qty = parseInt(qtyInput.value);
+                    if (qty > 1) {
+                        qtyInput.value = qty - 1;
+                        updateCartTotals();
+                    }
+                });
+
+                plusBtn.addEventListener('click', () => {
+                    let qty = parseInt(qtyInput.value);
+                    qtyInput.value = qty + 1;
+                    updateCartTotals();
+                });
+
+                removeBtn.addEventListener('click', () => {
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.9)';
+                    setTimeout(() => {
+                        item.remove();
+                        updateCartTotals();
+                    }, 300);
+                });
+            });
+
+            updateCartTotals();
+        });
+    </script>
+</body>
+
+</html>
