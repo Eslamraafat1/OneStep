@@ -34,7 +34,7 @@ Production client work: the UI behind [onestepcorp.com](https://onestepcorp.com/
 <summary>Static build from this repository (served locally)</summary>
 <br>
 <img src="docs/screenshots/repo-desktop.jpg" alt="index.html from this repository served locally, desktop 1440x900" width="100%">
-<p><sub>This repo's <code>index.html</code> at 1440×900. It still carries the base theme's placeholder logo and demo copy; production content and branding were applied when the UI was integrated into the back end.</sub></p>
+<p><sub>This repo's <code>index.html</code> at 1440×900: OneStep logo, imagery and English copy translated from the live Arabic site.</sub></p>
 </details>
 
 ## Overview
@@ -46,37 +46,37 @@ Production client work: the UI behind [onestepcorp.com](https://onestepcorp.com/
 | **My role** | Front-end implementation: page templates, responsive layout, catalog filtering UI, cart UI and interactions |
 | **Production** | Live at [onestepcorp.com](https://onestepcorp.com/), served by a Laravel back end; Arabic-first (`lang="ar" dir="rtl"`) with an EN switch |
 
-> **Repo vs. live:** this repository is the **static HTML/CSS/JS front end** (English, LTR). The live site is a later build of this UI wired to a back end (accounts, AJAX cart, AR/EN content) for production.
+> **Repo vs. live:** this repository is the **static HTML/CSS/JS front end** (English, LTR). The live site is a later build of this UI wired to a Laravel back end (accounts, AJAX cart, AR/EN content) by the back-end developer.
+>
+> **Content:** brand, logo, contact details, product categories, products, FAQ, testimonials and blog copy come from the live site (Arabic copy translated to English); photos and client logos are the ones published on onestepcorp.com. Cart prices are demo values for the cart UI only, because the live catalogue shows no prices.
 
 ## Pages
 
-16 HTML pages:
+14 HTML pages:
 
 | Page | Purpose |
 |---|---|
 | `index.html` | Home — full-width fade hero slider (Swiper: autoplay, arrows, pagination), services, projects, testimonials, news |
 | `about.html` | Company profile |
-| `category.html` | Main product categories with a **filter sidebar** (load capacity, diameter, wheel tread) |
-| `category-details.html` | Category landing with sub-categories |
-| `product-details.html` | Product page with thumbnail gallery and related products |
+| `category.html` | The industry sectors (manufacturing, logistics, material handling, healthcare, food & beverage, hospitality) with a **filter bar** (housing type and material, load capacity, diameter, wheel tread, mounting type) |
+| `category-details.html` | Manufacturing & Industry category with its four sub-categories (blue / grey elastic rubber, polyamide, polyurethane) |
+| `product-details.html` | Polyamide wheel 200 mm / 1500 kg: thumbnail gallery, specs and related casters |
 | `cart.html` | Shopping cart with live quantity / totals logic |
 | `our-services.html` | Services overview |
 | `service.html` | Services listing |
 | `service-details.html` | Single service page |
 | `news-grid.html` | Blog / news grid |
-| `news-details.html` | Article page with comment form |
-| `team.html` | Team grid |
-| `team-details.html` | Team member profile with contact form |
+| `news-details.html` | Article ("Choosing the right industrial wheel for heavy-duty environments") with comment form |
 | `faq.html` | FAQ accordion |
-| `contact.html` | Contact page with message form |
+| `contact.html` | Riyadh and Cairo offices, map and a client-side validated message form (opens a pre-filled email; no server handler in this repo) |
 | `404.html` | Custom error page |
 
 ## Key Features
 
 ### Product catalog & shopping UI
-- **Domain-specific filter panel** (`assets/js/filter.js`, vanilla JS): dropdown filters and **dual-handle range sliders** for *Load Capacity* (1,500–7,200) and *Diameter* (125–400), draggable with mouse **and** touch, synced to number inputs.
+- **Domain-specific filter panel** (`assets/js/filter.js`, vanilla JS): dropdown filters and **dual-handle range sliders** for *Load Capacity* (80–8,000 kg) and *Diameter* (75–400 mm), the ranges used by the live catalogue, draggable with mouse **and** touch, synced to number inputs.
 - **Mobile off-canvas filter drawer** with overlay, body-scroll lock, accordion sections and a "clear all" reset.
-- **Cart logic** (vanilla JS, `cart.html`): +/- quantity controls, animated item removal, per-line totals, subtotal + 10% tax + grand total, live header badge count, and an empty-cart state that disables checkout.
+- **Cart logic** (vanilla JS, `cart.html`): +/- quantity controls, animated item removal, per-line totals, subtotal + 10% tax + grand total, live header badge count, and an empty-cart state that disables checkout. The prices are demo values for the UI, labelled as such on the page.
 - Product gallery with active-thumbnail switching.
 
 ### Responsive UI
@@ -87,7 +87,8 @@ Production client work: the UI behind [onestepcorp.com](https://onestepcorp.com/
 - GSAP 3 (ScrollTrigger, ScrollSmoother, SplitText), WOW.js + Animate.css reveal effects, counter-up stats, Magnific Popup lightbox, parallax sections, preloader.
 
 ### Maintainable styles
-- Styles authored in **Sass**: `assets/scss/main.scss` + 24 partials (`_header`, `_hero`, `_footer`, `_variables`, `_mixins`, ...), compiled to `assets/css/main.css`.
+- Base theme styles are authored in **Sass**: `assets/scss/main.scss` + 24 partials (`_header`, `_hero`, `_footer`, `_variables`, `_mixins`, ...), compiled to `assets/css/main.css`.
+- The catalogue, product, cart and services styles (`.cat-hero`, `.pd-*`, `.cart-*`, `.srv-*` ...) were added directly to the compiled `main.css` and are **not** in the SCSS sources, so recompiling the SCSS alone would drop them.
 
 ## SEO (production site)
 
@@ -99,18 +100,23 @@ Verified from the live HTML of onestepcorp.com:
 - `<meta name="robots" content="index, follow">`, `robots.txt` and `sitemap.xml`
 - `loading="lazy"` on images
 
-In this static repo, the key pages (Categories, Cart, Services, Product) have page-specific `<title>`s.
+In this static repo:
+
+- Every page has a unique `<title>` and meta description, `<html lang="en" dir="ltr">`, Open Graph and Twitter Card tags, and a `rel="canonical"` pointing at the **production URL** of the route it implements (e.g. `about.html` → `https://onestepcorp.com/about`).
+- `index.html` carries `Organization` JSON-LD (name, logo, both offices, phone numbers, email, social profiles).
+- `sitemap.xml` lists those production URLs; `robots.txt` mirrors the production rules. `cart.html` and `404.html` are `noindex`.
+- Images have descriptive `alt` text (decorative ones use `alt=""`), icon-only controls have `aria-label`s.
 
 ## Tech Stack
 
 | Area | Tools |
 |---|---|
-| Markup | HTML5 (16 pages) |
+| Markup | HTML5 (14 pages) |
 | Styling | CSS3, Sass (SCSS partials), Bootstrap 5.3.2, Animate.css |
 | Scripting | JavaScript (ES6+), jQuery 3.7.1 |
 | Sliders / motion | Swiper 8.3.2, GSAP 3.11.4 (ScrollTrigger, ScrollSmoother, SplitText), WOW.js, Parallaxie |
 | UI plugins | MeanMenu, Nice Select, Magnific Popup, Waypoints + Counter-Up |
-| Icons | Font Awesome 6 |
+| Icons | Font Awesome Free 6.7.2 (cdnjs, SRI-pinned) + a small shim for icon names the theme took from Pro |
 
 ## Project Structure
 
@@ -118,16 +124,25 @@ In this static repo, the key pages (Categories, Cart, Services, Product) have pa
 OneStep/
 ├── index.html, about.html, category.html, category-details.html,
 │   product-details.html, cart.html, service.html, service-details.html,
-│   our-services.html, news-grid.html, news-details.html, team.html,
-│   team-details.html, faq.html, contact.html, 404.html
+│   our-services.html, news-grid.html, news-details.html, faq.html,
+│   contact.html, 404.html
+├── robots.txt, sitemap.xml
 ├── assets/
-│   ├── css/        # bootstrap, main.css (compiled), vendor styles
+│   ├── css/        # bootstrap, main.css (compiled), fa-free-shims.css, contact-form.css, vendor styles
 │   ├── scss/       # main.scss + 24 partials
-│   ├── js/         # main.js, filter.js, vendor libs (jQuery, GSAP, Swiper...)
-│   ├── img/        # images
-│   └── webfonts/   # icon fonts
+│   ├── js/         # main.js, filter.js, contact-form.js, vendor libs (jQuery, GSAP, Swiper...)
+│   └── img/        # images (recompressed; categories/, subcategories/, products/ from the live site)
 └── docs/screenshots/
 ```
+
+## Known Limitations
+
+This is the static front end only; the production behaviour lives in the client's Laravel back end.
+
+- The cart state is not persisted, the header search and the blog comment form do not submit anywhere, and the filter result count is a UI preview rather than real filtering.
+- The contact form validates in the browser and then opens the visitor's email app addressed to info@onestepcorp.com (there is no PHP/mail handler here).
+- Cart prices are demo values; the live catalogue is quote-based.
+- Font Awesome and the map embed load from CDNs, so icons need an internet connection.
 
 ## Run Locally
 

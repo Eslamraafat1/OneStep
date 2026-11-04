@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Shopping Cart - OneStep</title>
-    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <title>Shopping Cart | OneStep</title>
+    <meta name="description" content="Review the industrial wheels and casters in your OneStep cart, update quantities and proceed to checkout.">
+    <meta name="author" content="Eslam Raafat">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://onestepcorp.com/cart">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="OneStep">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Shopping Cart | OneStep">
+    <meta property="og:description" content="Review the industrial wheels and casters in your OneStep cart, update quantities and proceed to checkout.">
+    <meta property="og:url" content="https://onestepcorp.com/cart">
+    <meta property="og:image" content="https://onestepcorp.com/storage/uploads/settings/Gwes2P5kF1dWl5iI8DUrWloKKw1UChE6PWKuWDfI.jpg">
+    <meta property="og:image:width" content="1500">
+    <meta property="og:image:height" content="840">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shopping Cart | OneStep">
+    <meta name="twitter:description" content="Review the industrial wheels and casters in your OneStep cart, update quantities and proceed to checkout.">
+    <meta name="twitter:image" content="https://onestepcorp.com/storage/uploads/settings/Gwes2P5kF1dWl5iI8DUrWloKKw1UChE6PWKuWDfI.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/css/fa-free-shims.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/meanmenu.css">
@@ -42,7 +61,7 @@
         </div>
     </div>
 
-    <button id="back-top" class="back-to-top"><i class="fa-regular fa-arrow-up"></i></button>
+    <button id="back-top" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
     <div class="mouseCursor cursor-outer"></div>
     <div class="mouseCursor cursor-inner"></div>
 
@@ -52,33 +71,67 @@
             <div class="offcanvas__wrapper">
                 <div class="offcanvas__content">
                     <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
-                        <div class="offcanvas__logo"><a href="index.html"><img src="assets/img/logo/white-logo.svg" alt="logo-img"></a></div>
-                        <div class="offcanvas__close"><button><i class="fas fa-times"></i></button></div>
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo/onestep-logo.png" alt="OneStep" width="206" height="46">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button aria-label="Close menu">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
                     </div>
-                    <p class="text d-none d-xl-block">Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat.</p>
+                    <p class="text d-none d-xl-block">
+                        Authorised agent for Wicke (Germany) industrial wheels and casters, serving factories, warehouses and logistics companies in Egypt and Saudi Arabia.
+                    </p>
                     <div class="mobile-menu fix mb-3"></div>
                     <div class="offcanvas__contact">
                         <h4>Contact Info</h4>
                         <ul>
                             <li class="d-flex align-items-center">
-                                <div class="offcanvas__contact-icon"><i class="fal fa-map-marker-alt"></i></div>
-                                <div class="offcanvas__contact-text"><a href="#">Main Street, Melbourne, Australia</a></div>
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="contact.html">Unit 7858, Al Bashamah St., Al Masha'il, Riyadh 14325, Saudi Arabia</a>
+                                </div>
                             </li>
                             <li class="d-flex align-items-center">
-                                <div class="offcanvas__contact-icon mr-15"><i class="far fa-phone"></i></div>
-                                <div class="offcanvas__contact-text"><a href="tel:+11002345909">+11002345909</a></div>
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:info@onestepcorp.com">info@onestepcorp.com</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <span>Sat &ndash; Thu: 9:00 &ndash; 6:00</span>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+966504123572">+966 50 412 3572</a>
+                                </div>
                             </li>
                         </ul>
                         <a class="gt-theme-btn-main mt-4" href="contact.html">
-                            <span class="gt-theme-btn-arrow-left"><i class="fa-solid fa-arrow-up-right"></i></span>
-                            <span class="gt-theme-btn">Get Started</span>
-                            <span class="gt-theme-btn-arrow-right"><i class="fa-solid fa-arrow-up-right"></i></span>
+                            <span class="gt-theme-btn-arrow-left"> <i class="fa-solid fa-arrow-up-right"></i> </span>
+                            <span class="gt-theme-btn">Get Started Now</span>
+                            <span class="gt-theme-btn-arrow-right"> <i class="fa-solid fa-arrow-up-right"></i> </span>
                         </a>
                         <div class="social-icon d-flex align-items-center">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/people/One-Step/61590420821898/" target="_blank" rel="noopener" aria-label="OneStep on Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/onestep.corp" target="_blank" rel="noopener" aria-label="OneStep on Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@onestepcorp" target="_blank" rel="noopener" aria-label="OneStep on TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.snapchat.com/@onestepcorp" target="_blank" rel="noopener" aria-label="OneStep on Snapchat"><i class="fab fa-snapchat"></i></a>
                         </div>
                     </div>
                 </div>
@@ -94,7 +147,7 @@
                 <div class="mega-menu-wrapper">
                     <div class="header-main">
                         <a href="index.html" class="logo">
-                            <img src="assets/img/logo/white-logo.svg" alt="img">
+                            <img src="assets/img/logo/onestep-logo.png" alt="OneStep" width="206" height="46">
                         </a>
                         <div class="header-left">
                             <div class="mean__menu-wrapper">
@@ -104,7 +157,7 @@
                                             <li class="has-dropdown menu-thumb"><a href="index.html">Home</a></li>
                                             <li class="has-dropdown d-xl-none"><a href="index.html" class="border-none">Home</a></li>
                                             <li><a href="about.html">About Us</a></li>
-                                            <li class="has-dropdown"><a href="category.html">category</a></li>
+                                            <li class="has-dropdown"><a href="category.html">Categories</a></li>
                                             <li><a href="our-services.html">Services</a></li>
                                             <li><a href="news-grid.html">Blog</a></li>
                                             <li><a href="contact.html">Contact Us</a></li>
@@ -116,8 +169,8 @@
                             </div>
                         </div>
                         <div class="header-right d-flex justify-content-end align-items-center">
-                            <a href="#" class="main-header__search search-toggler">
-                                <i class="fa-regular fa-magnifying-glass"></i>
+                            <a href="#" class="main-header__search search-toggler" aria-label="Search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
                             </a>
                             <div class="header__hamburger my-auto">
                                 <div class="sidebar__toggle">
@@ -140,8 +193,8 @@
         <div class="search-popup__overlay search-toggler"></div>
         <div class="search-popup__content style-2">
             <form role="search" method="get" class="search-popup__form" action="#">
-                <input type="text" id="search" name="search" placeholder="Search Here...">
-                <button type="submit" aria-label="search submit" class="search-btn"><span><i class="fa-regular fa-magnifying-glass"></i></span></button>
+                <input type="text" id="search" name="search" placeholder="Search wheels and casters..." aria-label="Search">
+                <button type="submit" aria-label="search submit" class="search-btn"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
             </form>
         </div>
     </div>
@@ -176,41 +229,41 @@
                             </div>
 
                             <!-- Item 1 -->
-                            <div class="cart-item" data-price="2500">
+                            <div class="cart-item" data-price="120">
                                 <div class="cart-item-img">
-                                    <img src="https://www.tente.com/media/d6/7a/fa/1773827537/product_main_261.jpg?ts=1773827537" alt="Product">
+                                    <img src="assets/img/products/polyamide-wheel-200mm-1500kg.webp" alt="Polyamide wheel, 200 mm, 1500 kg" width="120" height="90">
                                 </div>
                                 <div class="cart-item-info">
-                                    <div class="cart-item-cat">Enterprise Software</div>
-                                    <h4 class="cart-item-title">Enterprise ERP Suite Pro</h4>
-                                    <div class="cart-item-price">$2,500.00</div>
+                                    <div class="cart-item-cat">Manufacturing &amp; Industry</div>
+                                    <h4 class="cart-item-title">Polyamide Wheel 200 mm &ndash; 1500 kg</h4>
+                                    <div class="cart-item-price">$120.00</div>
                                 </div>
                                 <div class="cart-qty-ctrl">
-                                    <button class="cart-qty-btn minus" type="button"><i class="fa-solid fa-minus"></i></button>
-                                    <input type="text" class="cart-qty-input" value="1" readonly>
-                                    <button class="cart-qty-btn plus" type="button"><i class="fa-solid fa-plus"></i></button>
+                                    <button class="cart-qty-btn minus" type="button" aria-label="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="text" class="cart-qty-input" value="1" readonly aria-label="Quantity">
+                                    <button class="cart-qty-btn plus" type="button" aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
                                 </div>
-                                <div class="cart-item-total" style="color: #fff; font-weight: 700; width: 100px; text-align: right; font-size: 1.1rem;">$2,500.00</div>
-                                <button class="cart-item-remove" title="Remove Item" type="button"><i class="fa-solid fa-trash-can"></i></button>
+                                <div class="cart-item-total" style="color: #fff; font-weight: 700; width: 100px; text-align: right; font-size: 1.1rem;">$120.00</div>
+                                <button class="cart-item-remove" title="Remove item" aria-label="Remove item" type="button"><i class="fa-solid fa-trash-can"></i></button>
                             </div>
 
                             <!-- Item 2 -->
-                            <div class="cart-item" data-price="850">
+                            <div class="cart-item" data-price="85">
                                 <div class="cart-item-img">
-                                    <img src="assets/img/home-2/service/servive-04.jpg" alt="Product" onerror="this.src='https://www.tente.com/media/d6/7a/fa/1773827537/product_main_261.jpg?ts=1773827537'">
+                                    <img src="assets/img/products/polyamide-swivel-caster-150mm-900kg.webp" alt="Polyamide swivel caster, galvanised steel, 150 mm, 900 kg" width="120" height="90">
                                 </div>
                                 <div class="cart-item-info">
-                                    <div class="cart-item-cat">Cloud Solutions</div>
-                                    <h4 class="cart-item-title">CloudOps Manager 1TB</h4>
-                                    <div class="cart-item-price">$850.00</div>
+                                    <div class="cart-item-cat">Manufacturing &amp; Industry</div>
+                                    <h4 class="cart-item-title">Swivel Caster 150 mm &ndash; 900 kg, Galvanised Steel</h4>
+                                    <div class="cart-item-price">$85.00</div>
                                 </div>
                                 <div class="cart-qty-ctrl">
-                                    <button class="cart-qty-btn minus" type="button"><i class="fa-solid fa-minus"></i></button>
-                                    <input type="text" class="cart-qty-input" value="1" readonly>
-                                    <button class="cart-qty-btn plus" type="button"><i class="fa-solid fa-plus"></i></button>
+                                    <button class="cart-qty-btn minus" type="button" aria-label="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
+                                    <input type="text" class="cart-qty-input" value="1" readonly aria-label="Quantity">
+                                    <button class="cart-qty-btn plus" type="button" aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
                                 </div>
-                                <div class="cart-item-total" style="color: #fff; font-weight: 700; width: 100px; text-align: right; font-size: 1.1rem;">$850.00</div>
-                                <button class="cart-item-remove" title="Remove Item" type="button"><i class="fa-solid fa-trash-can"></i></button>
+                                <div class="cart-item-total" style="color: #fff; font-weight: 700; width: 100px; text-align: right; font-size: 1.1rem;">$85.00</div>
+                                <button class="cart-item-remove" title="Remove item" aria-label="Remove item" type="button"><i class="fa-solid fa-trash-can"></i></button>
                             </div>
 
                             <!-- Empty Cart Message (Hidden by default) -->
@@ -233,21 +286,21 @@
                                 <h3>Order Summary</h3>
                                 <div class="summary-row">
                                     <span>Subtotal</span>
-                                    <span id="cart-subtotal">$3,350.00</span>
+                                    <span id="cart-subtotal">$205.00</span>
                                 </div>
                                 <div class="summary-row">
                                     <span>Tax (10%)</span>
-                                    <span id="cart-tax">$335.00</span>
+                                    <span id="cart-tax">$20.50</span>
                                 </div>
                                 <div class="summary-row total">
                                     <span>Total Price</span>
-                                    <span id="cart-total">$3,685.00</span>
+                                    <span id="cart-total">$225.50</span>
                                 </div>
                                 <button class="checkout-btn" id="checkoutBtn">
                                     Proceed to Checkout <i class="fa-solid fa-arrow-right"></i>
                                 </button>
                                 <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; text-align: center; margin-top: 15px; margin-bottom: 0;">
-                                    <i class="fa-solid fa-shield-halved" style="color: #f15a24;"></i> Secure 256-bit SSL Checkout
+                                    <i class="fa-solid fa-circle-info" style="color: #f15a24;"></i> Demo prices for the cart UI only &ndash; not OneStep's price list.
                                 </p>
                             </div>
                         </div>
@@ -257,11 +310,10 @@
 
             <!-- Footer -->
             <footer class="footer-section fix section-bg-1">
-                <div class="right-shape">   <!-- <img src="assets/img/home-2/hero/hero-light.png" alt="img"> --></div>
                 <div class="container">
                     <div class="cta-newsletter-wrapper">
                         <h2 class="text-anim">Need Help Ordering?</h2>
-                        <a class="gt-theme-btn-main wow fadeInUp" href="https://wa.me/11002345909" target="_blank">
+                        <a class="gt-theme-btn-main wow fadeInUp" href="https://wa.me/201110645613" target="_blank">
                             <span class="gt-theme-btn-arrow-left"><i class="fa-solid fa-arrow-up-right"></i></span>
                             <span class="gt-theme-btn">Contact on WhatsApp</span>
                             <span class="gt-theme-btn-arrow-right"><i class="fa-solid fa-arrow-up-right"></i></span>
@@ -272,49 +324,77 @@
                     <div class="container">
                         <div class="footer-widget-wrapper">
                             <div class="row justify-content-between">
-                                <div class="col-xl-4 col-lg-5 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                <div class="col-xl-3 col-lg-5 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                                     <div class="footer-widget-items">
-                                        <div class="widget-head"><a href="index.html" class="footer-logo"><img src="assets/img/logo/white-logo.svg" alt="img"></a></div>
+                                        <div class="widget-head">
+                                            <a href="index.html" class="footer-logo">
+                                                <img src="assets/img/logo/onestep-logo.png" alt="OneStep" width="206" height="46" loading="lazy">
+                                            </a>
+                                        </div>
                                         <div class="footer-content">
-                                            <p>Providing cutting-edge technology solutions to businesses worldwide.</p>
+                                            <p>
+                                                Precision and strength in every wheel, weld and cut. Authorised agent for Wicke (Germany) industrial wheels and casters.
+                                            </p>
                                             <div class="social-icon d-flex align-items-center">
-                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                                <a href="#"><i class="fab fa-youtube"></i></a>
-                                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                <a href="https://www.facebook.com/people/One-Step/61590420821898/" target="_blank" rel="noopener" aria-label="OneStep on Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/onestep.corp" target="_blank" rel="noopener" aria-label="OneStep on Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@onestepcorp" target="_blank" rel="noopener" aria-label="OneStep on TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.snapchat.com/@onestepcorp" target="_blank" rel="noopener" aria-label="OneStep on Snapchat"><i class="fab fa-snapchat"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                                     <div class="footer-widget-items">
-                                        <div class="widget-head"><h3>Quick Links</h3></div>
+                                        <div class="widget-head">
+                                            <h3>Quick Links</h3>
+                                        </div>
                                         <ul class="gt-list-area">
+                                            <li><a href="about.html">About Us</a></li>
                                             <li><a href="category.html">Categories</a></li>
                                             <li><a href="our-services.html">Services</a></li>
-                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="news-grid.html">Blog</a></li>
+                                            <li><a href="faq.html">FAQ</a></li>
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 ps-lg-0 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                                     <div class="footer-widget-items">
-                                        <div class="widget-head"><h3>Products</h3></div>
+                                        <div class="widget-head">
+                                            <h3>Categories</h3>
+                                        </div>
                                         <ul class="gt-list-area">
-                                            <li><a href="product-details.html">Enterprise Software</a></li>
-                                            <li><a href="product-details.html">Network Solutions</a></li>
-                                            <li><a href="product-details.html">IoT Devices</a></li>
-                                            <li><a href="product-details.html">Cloud Platforms</a></li>
+                                            <li><a href="category-details.html">Manufacturing &amp; Industry</a></li>
+                                            <li><a href="category.html">Logistics &amp; Warehousing</a></li>
+                                            <li><a href="category.html">Material Handling &amp; Forklifts</a></li>
+                                            <li><a href="category.html">Healthcare &amp; Pharma</a></li>
+                                            <li><a href="category.html">Food &amp; Beverage</a></li>
+                                            <li><a href="category.html">Hospitality</a></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
                                     <div class="footer-widget-items">
-                                        <div class="widget-head"><h3>Get in touch</h3></div>
+                                        <div class="widget-head">
+                                            <h3>Get in touch</h3>
+                                        </div>
                                         <ul class="contact-list">
-                                            <li>350 Fifth Avenue, New York, NY 10118</li>
-                                            <li><a href="tel:+11002345909">+11002345909</a></li>
-                                            <li>Mon-Fri 9:00am - 5:00pm</li>
+                                            <li>
+                                                <b>Saudi Arabia</b> &mdash; Unit 7858, Al Bashamah St., Al Masha'il, Riyadh 14325
+                                            </li>
+                                            <li>
+                                                <a href="tel:+966504123572">+966 50 412 3572</a> &middot; <a href="tel:+966556518914">+966 55 651 8914</a>
+                                            </li>
+                                            <li>
+                                                <b>Egypt</b> &mdash; 42 El Bahr El Raeesy St., 5th Floor, Apt. 9, Sheraton, Heliopolis, Cairo
+                                            </li>
+                                            <li>
+                                                <a href="tel:+201110645613">+20 111 064 5613</a> &middot; <a href="tel:+201010613466">+20 101 061 3466</a>
+                                            </li>
+                                            <li>
+                                                <a href="mailto:info@onestepcorp.com">info@onestepcorp.com</a> &middot; Sat &ndash; Thu: 9:00 &ndash; 6:00
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -324,11 +404,17 @@
                     <div class="footer-bottom">
                         <div class="container">
                             <div class="footer-bottom-wrapper">
-                                <p>© 2026 <b>OneStep.</b> All rights reserved.</p>
-                                <ul class="footer-list">
-                                    <li><a href="contact.html">Privacy policy</a></li>
-                                    <li>।</li>
-                                    <li><a href="contact.html">Terms &amp; conditions</a></li>
+                                <p class="wow fadeInUp" data-wow-delay=".3s">
+                                    &copy; 2026 <b>OneStep.</b> All rights reserved.
+                                </p>
+                                <ul class="footer-list wow fadeInUp" data-wow-delay=".7s">
+                                    <li>
+                                        <a href="https://onestepcorp.com/privacy-policy">Privacy policy</a>
+                                    </li>
+                                    <li>&#2404;</li>
+                                    <li>
+                                        <a href="https://onestepcorp.com/terms-conditions">Terms &amp; conditions</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

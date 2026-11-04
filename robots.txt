@@ -1,0 +1,10 @@
+# Mirrors the production rules on onestepcorp.com
+User-agent: *
+Disallow: /cart
+Disallow: /cart.html
+Disallow: /checkout
+Disallow: /login
+Disallow: /register
+Disallow: /admin
+
+Sitemap: https://onestepcorp.com/sitemap.xml

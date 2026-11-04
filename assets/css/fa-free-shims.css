@@ -1,0 +1,14 @@
+/*
+ * Font Awesome Free 6 shims.
+ * The theme was built against Font Awesome Pro, which is commercially licensed and
+ * must not be redistributed. Icons now load from Font Awesome Free 6.7.2 (cdnjs);
+ * the few Pro-only icon names still used in the markup are mapped to the closest
+ * Free glyphs here so the HTML does not need Pro.
+ */
+.fa-arrow-up-right::before,
+.fa-arrow-up-left::before {
+    content: "\f061"; /* arrow-right, rotated below */
+    display: inline-block;
+}
+.fa-arrow-up-right::before { transform: rotate(-45deg); }
+.fa-arrow-up-left::before { transform: rotate(-135deg); }

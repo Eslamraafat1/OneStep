@@ -1,0 +1,18 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Dependencies and build tooling (none required to run the site)
+node_modules/
+.sass-cache/
+*.css.map
+
+# Local env / logs / test artefacts
+.env
+.env.*
+*.log
+test-results/
+playwright-report/

@@ -13,13 +13,13 @@
         $('#mobile-menu').meanmenu({
             meanMenuContainer: '.mobile-menu',
             meanScreenWidth: "1199",
-            meanExpand: ['<i class="far fa-plus"></i>'],
+            meanExpand: ['<i class="fa-solid fa-plus"></i>'],
         });
 
         $('#mobile-menus').meanmenu({
             meanMenuContainer: '.mobile-menus',
             meanScreenWidth: "19920",
-            meanExpand: ['<i class="far fa-plus"></i>'],
+            meanExpand: ['<i class="fa-solid fa-plus"></i>'],
         });
 
         $documentOn.on("click", ".mean-expand", function() {

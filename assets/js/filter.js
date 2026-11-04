@@ -118,8 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSlider();
     }
 
-    setupRangeSlider('loadSlider', 'loadMin', 'loadMax', 'loadRangeVal', 1500, 7200);
-    setupRangeSlider('diaSlider', 'diaMin', 'diaMax', 'diaRangeVal', 125, 400);
+    setupRangeSlider('loadSlider', 'loadMin', 'loadMax', 'loadRangeVal', 80, 8000);
+    setupRangeSlider('diaSlider', 'diaMin', 'diaMax', 'diaRangeVal', 75, 400);
 
     // --- Mobile Off-canvas Logic ---
     const mobileTrigger = document.getElementById('openMobileFilter');
@@ -162,14 +162,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Result Counter Mockup ---
+    // Static front end: the real filtering runs on the production back end, so the
+    // count below is only a UI preview based on the category total in data-total.
     const checkInputs = document.querySelectorAll('input[type="checkbox"]');
     const countDisplay = document.querySelector('.results-count');
+    const totalItems = countDisplay ? parseInt(countDisplay.dataset.total || '0', 10) : 0;
     const applyBtn = document.querySelector('.apply-filters-btn');
 
     checkInputs.forEach(input => {
         input.addEventListener('change', () => {
             const checkedCount = Array.from(checkInputs).filter(i => i.checked).length;
-            const mockResults = Math.max(0, 124 - (checkedCount * 5));
+            const mockResults = Math.max(0, totalItems - (checkedCount * 5));
             if (countDisplay) countDisplay.textContent = `${mockResults} Items`;
             if (applyBtn) applyBtn.textContent = `Apply ${mockResults} Results`;
         });
